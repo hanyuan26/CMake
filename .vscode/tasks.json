@@ -1,0 +1,48 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "build",
+            "command": "H:/compiler/mingw64/bin/g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g", "${file}",
+                "-o", "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "-I", "H:\\programing\\cpp_file\\Eigen",
+                "-I", "H:\\programing\\outlib\\OpenCv\\build\\include",
+                "-I", "H:\\programing\\outlib\\OpenCv\\build\\include\\opencv2",
+                "-L", "H:\\programing\\outlib\\OpenCv\\build\\x64\\mingwbuild\\lib",
+                "-l", "libopencv_calib3d3413",
+                "-l", "libopencv_core3413",
+                "-l", "libopencv_dnn3413",
+                "-l", "libopencv_features2d3413",
+                "-l", "libopencv_flann3413",
+                "-l", "libopencv_highgui3413",
+                "-l", "libopencv_imgcodecs3413",
+                "-l", "libopencv_imgproc3413",
+                "-l", "libopencv_ml3413",
+                "-l", "libopencv_objdetect3413",
+                "-l", "libopencv_photo3413",
+                "-l", "libopencv_shape3413",
+                "-l", "libopencv_stitching3413",
+                "-l", "libopencv_superres3413",
+                "-l", "libopencv_stitching3413",
+                "-l", "libopencv_video3413",
+                "-l", "libopencv_videoio3413",
+                "-l", "libopencv_videostab3413",
+            ],
+            "options": {
+                "cwd": "H:/compiler/mingw64/bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "调试器生成的任务。"
+        }
+    ],
+    "version": "2.0.0"
+}
